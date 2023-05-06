@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO LIST WITH CRUD CRUD</title>
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="style.css"> -->
 </head>
+
 <body>
     <div id="container">
-        <form id="form">
-            <label for="Item">Add ToDo</label>
-            <input type="text " id="Item">
+        <div class="addTask">
 
-            <label for="description">Describe ToDo</label>
-            <input type="text" id="description">
+            <input type="text " id="Item" placeholder="Add task name">
 
-            <button>INSERT TO TODO LIST</button>
-        </form>
+            <input type="text" id="description" placeholder="Add task details">
+
+            <button id="addTask">Add List</button>
+        </div>
+
+        <ul id="pending">
+            <h3>PENDING TASK</h3>
+            <!-- <li>
+                <button>&#10003</button>
+                <button>&#x445 X</button>
+            </li> -->
+
+           
+        </ul>
+    
+        <ul id="completed">
+            <H3>COMPLETED TASK</H3>
+    
+        </ul>
+
     </div>
 
-    <ul id="pending">
-        <!-- <li>
-            <button>&#10003</button>
-            <button>&#x445 X</button>
-        </li> -->
-    </ul>
-
-    <ul id="completed">
-        
-    </ul>
+   
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="TODO.JS"></script>
+    <script src="axios.js"></script>
 </body>
+
 </html>
