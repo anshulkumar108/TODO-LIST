@@ -1,0 +1,15 @@
+
+div#container{
+    border: 5px groove blue;
+   margin: 100px auto;
+   width: fit-content;
+   padding: 30px  30px 30px 30px;
+   border-radius: 20px 20px 20px 20px;
+   box-shadow: 2px 2px 50px 10px rgb(20, 177, 216)
+}
+
+form#to-do-form{
+    border: 3px dashed rgb(136, 12, 105);
+    padding: 10px 10px 10px 10px;
+}
+

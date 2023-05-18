@@ -7,40 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO LIST WITH CRUD CRUD</title>
    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!--<link rel="stylesheet" href="style.css"> -->
+ <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.3/purify.min.js" integrity="sha512-TBmnYz6kBCpcGbD55K7f4LZ+ykn3owqujFnUiTSHEto6hMA7aV4W7VDPvlqDjQImvZMKxoR0dNY5inyhxfZbmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
-    <div id="container">
-        <div class="addTask">
+    <div id="container" >
+     
+        <form id="to-do-form">
 
             <input type="text " id="Item" placeholder="Add task name">
 
             <input type="text" id="description" placeholder="Add task details">
 
             <button id="addTask">Add List</button>
-        </div>
+        </form>
 
-        <ul id="pending">
+        <ul id="incomplete-tasks">
             <h3>PENDING TASK</h3>
-            <!-- <li>
-                <button>&#10003</button>
-                <button>&#x445 X</button>
-            </li> -->
-
-           
         </ul>
-    
-        <ul id="completed">
+        <ul id="completed-tasks">
             <H3>COMPLETED TASK</H3>
-    
-        </ul>
-
+        </ul> 
     </div>
-
-   
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="axios.js"></script>
+    <script src="TODO.js"></script>
 </body>
 
 </html>
